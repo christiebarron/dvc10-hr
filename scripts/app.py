@@ -14,8 +14,8 @@ import plotly.express as px
 
 
 # read file
-filepath = 'https://github.com/christiebarron/dvc10-hr/blob/main/data/raw/HRDataset_v14.xls.txt'
-hr_df = pd.read_csv(filepath, sep='\t',  encoding='utf-16')
+filepath = 'https://github.com/christiebarron/dvc10-hr/blob/main/data/raw/HRDataset_v14.csv'
+hr_df = pd.read_csv(filepath) #encoding='utf-16')
 
 # initial data wrangle  ##########################
 
