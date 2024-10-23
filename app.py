@@ -151,7 +151,8 @@ def gender_pie_fig(hr_df):
 # RUN APP ##################
 
 
-app = Dash()
+app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1(children='Employee Satisfaction', style={'textAlign':'center'}),
